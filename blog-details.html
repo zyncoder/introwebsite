@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="INFO HTML5 Template">
+
+  <title>Blog Details</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
+
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/progressbar.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/basictable.min.css">
+  <link rel="stylesheet" href="assets/css/master.css">
+  <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+
+
+<body class="font-heading-bentham">
+
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+        <div class="txt-loading">
+          <span data-text="I" class="characters">I</span>
+          <span data-text="N" class="characters">N</span>
+          <span data-text="F" class="characters">F</span>
+          <span data-text="O" class="characters">O</span>
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+
+  <!-- Switcher Area Start -->
+  <div class="switcher__area">
+    <div class="switcher__icon">
+      <button id="switcher_open" aria-label="switcher-open"><i class="fa-solid fa-gear"></i></button>
+      <button id="switcher_close" aria-label="switcher-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="switcher__items">
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">mode</p>
+        </div>
+        <div class="switcher__btn mode-type wc-col-2">
+          <button class="active" data-mode="dark" aria-label="active">dark</button>
+          <button data-mode="light" aria-label="light">light</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Language Support</p>
+        </div>
+        <div class="switcher__btn lang_dir wc-col-2">
+          <button class="active" data-mode="ltr" aria-label="ltr">LTR</button>
+          <button data-mode="rtl" aria-label="rtl">RTL</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Layout</p>
+        </div>
+        <div class="switcher__btn layout-type wc-col-2">
+          <button class="active" data-mode="full-width" aria-label="full width">Full Width</button>
+          <button data-mode="box-layout" aria-label="box-layout">Box Layout</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Cursor</p>
+        </div>
+        <div class="switcher__btn">
+          <select name="cursor-style" id="cursor_style">
+            <option value="1">default</option>
+            <option selected value="2">animated</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Switcher Area End -->
+
+  <!-- offcanvas start  -->
+  <div class="offcanvas-3__area">
+    <div class="offcanvas-3__inner">
+      <div class="offcanvas-3__meta-wrapper">
+        <div class="">
+          <button id="close_offcanvas" class="close-button" onclick="hideCanvas3()">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="">
+          <div class="offcanvas-3__meta mb-145 d-none d-md-block">
+            <ul>
+              <li><a href="tel:+2-352698102" class="unnerline"><u>+2-352 698 102</u></a></li>
+              <li><a href="mailto:contact@me.com">contact@me.com</a></li>
+              <li><a href="">27 Division St, <br>
+                  New York, NY 10002, USA</a></li>
+            </ul>
+          </div>
+          <div class="offcanvas-3__social d-none d-md-block">
+            <h4 class="title">Follow Me</h4>
+            <div class="offcanvas-3__social-links">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-dribbble"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-3__menu-wrapper">
+        <nav class="nav-menu offcanvas-3__menu">
+          <ul>
+            <li><a href="index.html">home dark</a></li>
+            <li><a href="index-light.html">home light</a></li>
+            <li><a href="about.html">about dark</a></li>
+            <li><a href="about-light.html">about light</a></li>
+            <li><a href="service.html">service dark</a></li>
+            <li><a href="service-light.html">service light</a></li>
+            <li><a href="service-details.html">service details dark</a></li>
+            <li><a href="service-details-light.html">service details light</a></li>
+            <li><a href="contact.html">contact dark</a></li>
+            <li><a href="contact-light.html">contact light</a></li>
+            <li><a href="blog.html">blog dark</a></li>
+            <li><a href="blog-light.html">blog light</a></li>
+            <li><a href="blog-details.html">blog details dark</a></li>
+            <li><a href="blog-details-light.html">blog details light</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- offcanvas end  -->
+
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="body-wrapper body-contentwriter">
+
+
+                <!-- overlay switcher close  -->
+        <div class="overlay-switcher-close"></div>
+
+        <!-- Header area start -->
+        <header class="contentwriter__header plr-100">
+          <div class="contentwriter__header-inner header__inner">
+            <div class="contentwriter__header-logo header__logo">
+              <a href="index.html">
+                <img src="assets/imgs/logo/site-logo-light.png" alt="Site-Logo" class="show-dark">
+                <img src="assets/imgs/logo/site-logo-dark.png" alt="Site-Logo" class="show-light">
+              </a>
+            </div>
+            <div class="contentwriter__header-nav header__nav-icon-6">
+              <button onclick="showCanvas3()">
+                <img src="assets/imgs/logo/bar-two.png" alt="bar">
+              </button>
+            </div>
+          </div>
+        </header>
+        <!-- Header area end -->
+
+
+        <main>
+
+
+          <!-- blog details start  -->
+          <section class="dancer__blogdetails pt-120">
+            <div class="container">
+              <div class="dancer__blogdetails-header">
+                <p class="dancer__blogdetails-tag"><a href="#">Design</a></p>
+                <h2 class="dancer__blogdetails-title">Donate your design for <br> newest designers to try <br> better
+                </h2>
+                <div class="dancer__blogdetails-metainfo mt-30 mb-20">
+                  <p>by Alderson <span class="date">Jan 18, 2019</span></p>
+                </div>
+              </div>
+
+              <div class="dancer__blogdetails-thumb cf_image position-relative overflow-hidden">
+                <img src="assets/imgs/inner/dancer/blog-lg.jpg" alt="blog-img" data-speed="0.5">
+              </div>
+
+              <div class="dancer__blogdetails-body mt-50">
+                <div class="dancer__blogdetails-contentwrap">
+                  <div class="dancer__blogdetails-contentleft">
+                    <ul class="dancer__blogdetails-overview dark-overview">
+                      <li>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>247 <br>
+                          Views </span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <span>14 <br>
+                          Shares</span>
+                      </li>
+                      <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+
+                  <div class="dancer__blogdetails-contentright">
+
+                    <article class="blog-details__fullBody">
+                      <div class="cf_text">
+                        <p>Myriam was first trained as a sculptor in Montreal and then in Helsinki, Finland. She is now
+                          based
+                          in Quebec but works for clients all around the globe. From textile design to murals, editorial
+                          illustrations and book covers, her style is recognized by her simple and perfectly arranged
+                          shapes
+                          as well as her rich and vibrant color palette. Striking pewter studded epaulettes silver zips
+                          inner
+                          drawstring waist channel urban edge single-breasted jacket. Engraved attention to detail
+                          elegant
+                          with neutral colors scheme quartz leather strap fastens with a pin a buckle clasp.</p>
+                      </div>
+                      <div class="cf_text">
+                        <p>However, the same reason also makes it messy. If someone is having a bad day, we might see it
+                          as
+                          a
+                          sign of tension or lack of investment in the project. For outsiders, lacking an understanding
+                          of
+                          the
+                          complex dynamics of a team can lead to the wrong conclusions.</p>
+                      </div>
+
+                      <div class="blog-details__quote mt-30 mb-30">
+                        <div class="blog-details__quote-icon mt-10">
+                          <img src="assets/imgs/inner/dancer/quote.png" alt="quote">
+                        </div>
+                        <div class="blog-details__quote-info">
+                          <div class="blog-details__quote-text">
+                            <p>Effortless comfortable full leather lining eye-catching unique detail to the toe low
+                              ‘cut-away’ sides clean and sleek harmony.</p>
+                          </div>
+                          <div class="blog-details__quote-author">
+                            <p>Adamson Janny</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="cf_text">
+                        <p>Beckoning a diverse audience of food lovers who may have never considered trying dumplings
+                          before.
+                          The unique blend of bold quirkiness and personality sets this brand apart, marking its own
+                          distinct
+                          place in the crowded world of bold font family. We love to bring designs to life as a
+                          developer,
+                          and
+                          I aim to do this using whatever front end tools are necessary.</p>
+                      </div>
+
+                      <div class="dancer__blogdetails-contentmiddle pb-30">
+                        <div class="dancer__blogdetails-middleleft cf_image text-center">
+                          <img src="assets/imgs/inner/dancer/contentimg.jpg" alt="contentimg">
+                          <p class="cf_details-img-title mt-10">Outdoor romance photoshoot</p>
+                        </div>
+                        <div class="dancer__blogdetails-middleright">
+                          <div class="cf_text">
+                            <p>Beckoning a diverse audience of food lovers who may have never considered trying
+                              dumplings
+                              before. The unique blend of bold quirkiness and personality sets this brand apart, marking
+                              its
+                              own distinct place in the crowded world of bold font family. We love to bring designs to
+                              life
+                              as
+                              a developer, and I aim to do this using whatever front end tools are necessary.</p>
+                          </div>
+                          <div class="cf_text">
+                            <p>Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh
+                              front
+                              liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front
+                              full
+                              button detail cotton blend cute functional. Bodycon skirts bright primary colours punchy
+                              palette.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <h4 class="dancer-blogdetails__title mb-20">Modelling</h4>
+
+                      <div class="cf_text">
+                        <p>We had observers go into the workplace and we timed people’s activities to the second. We’ve
+                          been
+                          to various workplaces, all high-tech companies. We wanted to look at information workers. We
+                          had
+                          observers shadow each person for three and a half days each and timed every activity to the
+                          second.
+                        </p>
+                      </div>
+
+                      <div class="dancer__blogdetails-service mt-10 mb-40">
+                        <ul class="list-plus">
+                          <li>Create the table lines here </li>
+                          <li>Organise everything early thoroughly</li>
+                          <li> Development</li>
+                          <li>Shopify Development</li>
+                        </ul>
+                      </div>
+
+                      <div class="cf_text">
+                        <p>Achieving deep work should be our goal in any team, but doing it in an office setting can be
+                          challenging because of so many distractions. Asynchronous communication in a remote setting is
+                          perfect for it. I’m not a fan of long reads with too many unnecessary details, so I’ll “jump”
+                          into
+                          the subject right away. My guide consists of several parts; thus, you can stop reading at any
+                          point
+                          when you understand that what you have learned so far covers your needs at the moment, and you
+                          can
+                          go back/or jump forward to any section when you want to refresh your memory or learn about the
+                          more
+                          complex workflows. Let’s go!</p>
+                      </div>
+
+                      <div class="cf_text">
+                        <p>If they pick up a phone call, that’s the start time. When they put the phone down, that’s the
+                          stop
+                          time. When they turn to the Word application we get the start time and stop time. We found
+                          people
+                          switched these activities on average of every three minutes and five seconds.</p>
+                      </div>
+                    </article>
+
+                    <div class="dancer__blogdetails-tagswrap pt-70">
+                      <ul class="dancer__blogdetails-tags">
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Modelling</a></li>
+                        <li><a href="#">Development</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="dancer__blogdetails-commentform pt-120 pb-130">
+                      <h5 class="dancer__blogdetails-commentform-title mb-10">Leave a Comment</h5>
+                      <p>Your email address will not be published. Required fields are marked</p>
+
+                      <div class="joya__contact-wrap joya__contact-dark mt-30">
+                        <div class="joya__contact-formwrap mt-90">
+                          <div class="joya__contact-formfield">
+                            <input type="text" name="Name" id="Name" placeholder="Name*">
+                          </div>
+                          <div class="joya__contact-formfield">
+                            <input type="text" name="Email" id="Email" placeholder="Email*">
+                          </div>
+                          <div class="joya__contact-formfield">
+                            <input type="text" name="Subject" id="Subject" placeholder="Subject*">
+                          </div>
+                        </div>
+                        <div class="joya__contact-msg">
+                          <input type="text" name="Messages" id="Messages" placeholder="Messages*">
+                        </div>
+                        <div class="joya__contact-checkbox">
+                          <input type="checkbox" id="remember">
+                          <label for="remember">Save my information for the next connect</label>
+                        </div>
+                        <div class="joya__contact-btnwraper mt-40">
+                          <button type="submit" class="wc-btn-border btn-rollover-cross">Submit Now</button>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- blog details end  -->
+
+
+          <!-- Recent Blog start -->
+          <section class="dancer__blogdetails-journal sm-pb-40">
+            <div class="container">
+              <div class="dancer__blogdetails-jtitlwrap">
+                <h2 class="dancer__blogdetails-jtitle">Journal</h2>
+              </div>
+            </div>
+
+            <div class="contentwriter__recent-wrapper">
+              <article class="contentwriter__recent-item border-bottom-0 has_fade_items_anim">
+                <span class="contentwriter__testimonial-icon"></span>
+                <div class="contentwriter__recent-item-thumb cf_image">
+                  <a href="blog-details.html"><img src="assets/imgs/content-write/recent1.jpg"
+                      alt="recentarticle"></a>
+                </div>
+                <div class="contentwriter__recent-item-content">
+                  <span class="contentwriter__recent-subtitle">Client : Adrob</span>
+                  <a href="blog-details.html">
+                    <h3 class="contentwriter__recent-title"> Our news picks from the first Design</h3>
+                  </a>
+                  <span class="contentwriter__recent-date">April, 14 - 2014</span>
+                </div>
+              </article>
+              <article class="contentwriter__recent-item border-bottom-0 has_fade_items_anim">
+                <span class="contentwriter__testimonial-icon"></span>
+                <div class="contentwriter__recent-item-thumb cf_image">
+                  <a href="blog-details.html"><img src="assets/imgs/content-write/recent2.jpg.png"
+                      alt="recentarticle"></a>
+                </div>
+                <div class="contentwriter__recent-item-content">
+                  <span class="contentwriter__recent-subtitle">Client : Adrob</span>
+                  <a href="blog-details.html">
+                    <h3 class="contentwriter__recent-title"> Protect Your Users, Protect Yourself</h3>
+                  </a>
+                  <span class="contentwriter__recent-date">April, 14 - 2014</span>
+                </div>
+              </article>
+              <article class="contentwriter__recent-item border-bottom-0 has_fade_items_anim">
+                <span class="contentwriter__testimonial-icon"></span>
+                <div class="contentwriter__recent-item-thumb cf_image">
+                  <a href="blog-details.html"><img src="assets/imgs/content-write/recent3.jpg.png"
+                      alt="recentarticle"></a>
+                </div>
+                <div class="contentwriter__recent-item-content">
+                  <span class="contentwriter__recent-subtitle">Client : Adrob</span>
+                  <a href="blog-details.html">
+                    <h3 class="contentwriter__recent-title"> The award for the best design project</h3>
+                  </a>
+                  <span class="contentwriter__recent-date">April, 14 - 2014</span>
+                </div>
+              </article>
+              <article class="contentwriter__recent-item border-bottom-0 has_fade_items_anim">
+                <span class="contentwriter__testimonial-icon"></span>
+                <div class="contentwriter__recent-item-thumb cf_image">
+                  <a href="blog-details.html"><img src="assets/imgs/content-write/recent4.jpg.png"
+                      alt="recentarticle"></a>
+                </div>
+                <div class="contentwriter__recent-item-content">
+                  <span class="contentwriter__recent-subtitle">Client : Adrob</span>
+                  <a href="blog-details.html">
+                    <h3 class="contentwriter__recent-title">The Anatomy Of Themed Design System</h3>
+                  </a>
+                  <span class="contentwriter__recent-date">April, 14 - 2014</span>
+                </div>
+              </article>
+              <article class="contentwriter__recent-item border-bottom-0 has_fade_items_anim">
+                <span class="contentwriter__testimonial-icon"></span>
+                <div class="contentwriter__recent-item-thumb cf_image">
+                  <a href="blog-details.html"><img src="assets/imgs/content-write/recent5.jpg.png"
+                      alt="recentarticle"></a>
+                </div>
+                <div class="contentwriter__recent-item-content">
+                  <span class="contentwriter__recent-subtitle">Client : Adrob</span>
+                  <a href="blog-details.html">
+                    <h3 class="contentwriter__recent-title">Protect Your Users, Protect Yourself</h3>
+                  </a>
+                  <span class="contentwriter__recent-date">April, 14 - 2014</span>
+                </div>
+              </article>
+            </div>
+          </section>
+          <!-- Recent Blog end -->
+
+
+        </main>
+
+
+        <!-- footer  -->
+        <footer class="contentwriter__footer">
+          <div class="contentwriter__footer-wrapper">
+            <div class="contentwriter__footer-item">
+              <div class="contentwriter__footer-left">
+                <span>© 2022 - 2025 | by <a href="https://www.crowdyflow.com/" target="">CrowdyFlow</a></span>
+              </div>
+            </div>
+            <div class="contentwriter__footer-item">
+              <div class="contentwriter__footer-center">
+                <ul class="contentwriter__footer-social">
+                  <li><a href="#">fb</a></li>
+                  <li><a href="#">tw</a></li>
+                  <li><a href="#">in</a></li>
+                  <li><a href="#">db</a></li>
+                  <li><a href="#">be</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="contentwriter__footer-item">
+              <div class="contentwriter__footer-right">
+                <ul class="contentwriter__footer-menu">
+                  <li><a href="about.html">about</a></li>
+                  <li><a href="service.html">services</a></li>
+                  <li><a href="blog.html">blog</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- /footer  -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- All JS files -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/typed.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/progressbar.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/TweenMax.min.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/tilt.jquery.min.js"></script>
+  <script src="assets/js/beforeafter.jquery-1.0.0.min.js"></script>
+  <script src="assets/js/basictable.min.js"></script>
+  <script src="assets/js/backToTop.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/error-handling.js"></script>
+  <script src="assets/js/offcanvas.js"></script>
+  <script src="assets/js/wc-cursor.js"></script>
+
+</body>
+
+</html>

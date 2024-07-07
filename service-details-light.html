@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="INFO HTML5 Template">
+
+  <title>Service Details</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
+
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/progressbar.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/basictable.min.css">
+  <link rel="stylesheet" href="assets/css/master.css">
+  <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+
+
+<body class="font-heading-bentham light">
+
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+        <div class="txt-loading">
+          <span data-text="I" class="characters">I</span>
+          <span data-text="N" class="characters">N</span>
+          <span data-text="F" class="characters">F</span>
+          <span data-text="O" class="characters">O</span>
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+
+  <!-- Switcher Area Start -->
+  <div class="switcher__area">
+    <div class="switcher__icon">
+      <button id="switcher_open" aria-label="switcher-open"><i class="fa-solid fa-gear"></i></button>
+      <button id="switcher_close" aria-label="switcher-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="switcher__items">
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">mode</p>
+        </div>
+        <div class="switcher__btn mode-type wc-col-2">
+          <button class="active" data-mode="dark" aria-label="active">dark</button>
+          <button data-mode="light" aria-label="light">light</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Language Support</p>
+        </div>
+        <div class="switcher__btn lang_dir wc-col-2">
+          <button class="active" data-mode="ltr" aria-label="ltr">LTR</button>
+          <button data-mode="rtl" aria-label="rtl">RTL</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Layout</p>
+        </div>
+        <div class="switcher__btn layout-type wc-col-2">
+          <button class="active" data-mode="full-width" aria-label="full width">Full Width</button>
+          <button data-mode="box-layout" aria-label="box-layout">Box Layout</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Cursor</p>
+        </div>
+        <div class="switcher__btn">
+          <select name="cursor-style" id="cursor_style">
+            <option value="1">default</option>
+            <option selected value="2">animated</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Switcher Area End -->
+
+  <!-- offcanvas start  -->
+  <div class="offcanvas-3__area">
+    <div class="offcanvas-3__inner">
+      <div class="offcanvas-3__meta-wrapper">
+        <div class="">
+          <button id="close_offcanvas" class="close-button" onclick="hideCanvas3()">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="">
+          <div class="offcanvas-3__meta mb-145 d-none d-md-block">
+            <ul>
+              <li><a href="tel:+2-352698102" class="unnerline"><u>+2-352 698 102</u></a></li>
+              <li><a href="mailto:contact@me.com">contact@me.com</a></li>
+              <li><a href="">27 Division St, <br>
+                  New York, NY 10002, USA</a></li>
+            </ul>
+          </div>
+          <div class="offcanvas-3__social d-none d-md-block">
+            <h4 class="title">Follow Me</h4>
+            <div class="offcanvas-3__social-links">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-dribbble"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-3__menu-wrapper">
+        <nav class="nav-menu offcanvas-3__menu">
+          <ul>
+            <li><a href="index.html">home dark</a></li>
+            <li><a href="index-light.html">home light</a></li>
+            <li><a href="about.html">about dark</a></li>
+            <li><a href="about-light.html">about light</a></li>
+            <li><a href="service.html">service dark</a></li>
+            <li><a href="service-light.html">service light</a></li>
+            <li><a href="service-details.html">service details dark</a></li>
+            <li><a href="service-details-light.html">service details light</a></li>
+            <li><a href="contact.html">contact dark</a></li>
+            <li><a href="contact-light.html">contact light</a></li>
+            <li><a href="blog.html">blog dark</a></li>
+            <li><a href="blog-light.html">blog light</a></li>
+            <li><a href="blog-details.html">blog details dark</a></li>
+            <li><a href="blog-details-light.html">blog details light</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- offcanvas end  -->
+
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="body-wrapper body-contentwriter">
+
+
+        <!-- overlay switcher close  -->
+        <div class="overlay-switcher-close"></div>
+
+        <!-- Header area start -->
+        <header class="contentwriter__header plr-100">
+          <div class="contentwriter__header-inner header__inner">
+            <div class="contentwriter__header-logo header__logo">
+              <a href="index.html">
+                <img src="assets/imgs/logo/site-logo-light.png" alt="Site-Logo" class="show-dark">
+                <img src="assets/imgs/logo/site-logo-dark.png" alt="Site-Logo" class="show-light">
+              </a>
+            </div>
+            <div class="contentwriter__header-nav header__nav-icon-6">
+              <button onclick="showCanvas3()">
+                <img src="assets/imgs/logo/bar-two.png" alt="bar">
+              </button>
+            </div>
+          </div>
+        </header>
+        <!-- Header area end -->
+
+
+        <main>
+
+
+          <!-- Blog details start  -->
+          <section class="cw-insd__area pt-100">
+            <div class="container">
+              <div class="dancer__classDetailHero-wrapper">
+                <div class="dancer__classDetailHero-thumb mb-30">
+                  <div class="cf_image position-relative overflow-hidden">
+                    <img src="assets/imgs/content-write/service-d-1.jpg" alt="detailsthumb" data-speed="0.5">
+                  </div>
+                </div>
+
+                <div class="dancer__classDetailHero-content">
+                  <h3 class="dancer__classDetailHero-title2">Product Review</h3>
+                  <div class="cf_text dancer__classDetailHero-dis2 mt-10">
+                    <p>Being designerly takes thinking, feeling, and acting like a
+                      designer. I’ve been thinking about and observing what it means to be designerly, and by using six
+                      such
+                      skills and behaviors</p>
+                  </div>
+                </div>
+
+                <div class="dancer__classDetailHero-items mt-60">
+                  <div class="dancer__classDetailHero-item mb-50">
+                    <div class="dancer__classDetailHero-left">
+                      <h3 class="dancer__classDetail-title">01. <span class="pl-30">Analysis</span></h3>
+                    </div>
+                    <div class="dancer__classDetailHero-right">
+                      <div class="cf_text mb-30">
+                        <p>Never having been a sales representative, nor having ever played one on TV, I was curious
+                          about
+                          their typical workday. Adapting the first rule of design. User lockdown approach was to
+                          conduct
+                          video interviews.</p>
+                      </div>
+                      <ul class="list-plus">
+                        <li>API Development</li>
+                        <li>Front End Development</li>
+                        <li>WordPress</li>
+                        <li>JavaScript</li>
+                        <li>Cloud Migration</li>
+                        <li>Fluter Framework</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="dancer__classDetailHero-item mb-50">
+                    <div class="dancer__classDetailHero-left">
+                      <h3 class="dancer__classDetail-title">02. <span class="pl-30">Research</span></h3>
+                    </div>
+                    <div class="dancer__classDetailHero-right cf_text">
+                      <p>Masked and socially distant, I walked a mile in their shoes through the dairy, pet food, and
+                        freezer aisles. This single visit uncovered many insights that had not come up in the video
+                        team.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="dancer__classDetailHero-item mb-50">
+                    <div class="dancer__classDetailHero-left">
+                      <h3 class="dancer__classDetail-title">03. <span class="pl-30">Writing</span></h3>
+                    </div>
+                    <div class="dancer__classDetailHero-right">
+                      <div class="cf_text">
+                        <p>Masked and socially distant, I walked a mile in their shoes through the dairy, pet food, and
+                          freezer aisles. This single visit uncovered many insights that had not come up in the video
+                          team.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dancer__classDetailHero-item mb-50">
+                    <div class="dancer__classDetailHero-left">
+                      <h3 class="dancer__classDetail-title">04. <span class="pl-30">Revision</span></h3>
+                    </div>
+                    <div class="dancer__classDetailHero-right cf_text">
+                      <p>Masked and socially distant, I walked a mile in their shoes through the dairy, pet food, and
+                        freezer aisles. This single visit uncovered many insights that had not come up in the video
+                        interviews and online walkthroughs. I shared this with the team, spread across the world, and
+                        everyone could empathize with the sales representatives</p>
+                    </div>
+                  </div>
+                  <div class="dancer__classDetailHero-item">
+                    <div class="dancer__classDetailHero-left">
+                      <h3 class="dancer__classDetail-title">05. <span class="pl-30">Delivery</span></h3>
+                    </div>
+                    <div class="dancer__classDetailHero-right">
+                      <div class="cf_text">
+                        <p>Masked and socially distant, I walked a mile in their shoes through the dairy, pet food, and
+                          freezer aisles. This single visit uncovered many insights that had not come up in the video
+                          team.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+          <!-- Blog details start  -->
+
+
+          <!-- Newsletter area start  -->
+          <div class="contentwriter__newsletter pt-140 pb-150">
+            <div class="contentwriter__newsletter-inner">
+              <span class="contentwriter__newsletter-subtitle mb-30 has_text_reveal_anim">Newsletter </span>
+              <div class="contentwriter__newsletter-titlewrapper mb-60">
+                <h2 class="contentwriter__newsletter-title has_text_reveal_anim">Stay up to date with <br> Joya
+                  newsletter
+                </h2>
+              </div>
+              <div class="contentwriter__newsletter-wrapper mb-30 has_fade_anim">
+                <form action="#">
+                  <input type="email" name="email" placeholder="Enter your email" id="email">
+                  <button type="submit" class="contentwriter__newsletter-kitebtn">subscribe <i
+                      class="fa-regular fa-paper-plane"></i></button>
+                </form>
+              </div>
+              <div class="cf_text contentwriter__newsletter-note has_fade_anim">
+                <p>*Note : your information are safe</p>
+              </div>
+            </div>
+          </div>
+          <!-- Newsletter area end  -->
+
+
+        </main>
+
+
+        <!-- footer  -->
+        <div class="contentwriter__footer">
+          <div class="contentwriter__footer-wrapper">
+            <div class="contentwriter__footer-item">
+              <div class="contentwriter__footer-left">
+                <span>© 2022 - 2025 | by <a href="https://www.crowdyflow.com/" target="">CrowdyFlow</a></span>
+              </div>
+            </div>
+            <div class="contentwriter__footer-item">
+              <div class="contentwriter__footer-center">
+                <ul class="contentwriter__footer-social">
+                  <li><a href="#">fb</a></li>
+                  <li><a href="#">tw</a></li>
+                  <li><a href="#">in</a></li>
+                  <li><a href="#">db</a></li>
+                  <li><a href="#">be</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="contentwriter__footer-item">
+              <div class="contentwriter__footer-right">
+                <ul class="contentwriter__footer-menu">
+                  <li><a href="about-light.html">about</a></li>
+                  <li><a href="service-light.html">services</a></li>
+                  <li><a href="blog-light.html">blog</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /footer  -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- All JS files -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/typed.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/progressbar.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/TweenMax.min.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/tilt.jquery.min.js"></script>
+  <script src="assets/js/beforeafter.jquery-1.0.0.min.js"></script>
+  <script src="assets/js/basictable.min.js"></script>
+  <script src="assets/js/backToTop.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/error-handling.js"></script>
+  <script src="assets/js/offcanvas.js"></script>
+  <script src="assets/js/wc-cursor.js"></script>
+
+
+
+</body>
+
+</html>

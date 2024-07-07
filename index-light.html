@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="INFO HTML5 Template">
+
+  <title>Home - Content Writer</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
+
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/progressbar.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/basictable.min.css">
+  <link rel="stylesheet" href="assets/css/master.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="font-heading-bentham light">
+
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+        <div class="txt-loading">
+          <span data-text="I" class="characters">I</span>
+          <span data-text="N" class="characters">N</span>
+          <span data-text="F" class="characters">F</span>
+          <span data-text="O" class="characters">O</span>
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+
+  <!-- Switcher Area Start -->
+  <div class="switcher__area">
+    <div class="switcher__icon">
+      <button id="switcher_open" aria-label="switcher-open"><i class="fa-solid fa-gear"></i></button>
+      <button id="switcher_close" aria-label="switcher-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="switcher__items">
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">mode</p>
+        </div>
+        <div class="switcher__btn mode-type wc-col-2">
+          <button class="active" data-mode="dark" aria-label="active">dark</button>
+          <button data-mode="light" aria-label="light">light</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Language Support</p>
+        </div>
+        <div class="switcher__btn lang_dir wc-col-2">
+          <button class="active" data-mode="ltr" aria-label="ltr">LTR</button>
+          <button data-mode="rtl" aria-label="rtl">RTL</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Layout</p>
+        </div>
+        <div class="switcher__btn layout-type wc-col-2">
+          <button class="active" data-mode="full-width" aria-label="full width">Full Width</button>
+          <button data-mode="box-layout" aria-label="box-layout">Box Layout</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <p class="switcher__title">Cursor</p>
+        </div>
+        <div class="switcher__btn">
+          <select name="cursor-style" id="cursor_style">
+            <option value="1">default</option>
+            <option selected value="2">animated</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Switcher Area End -->
+
+  <!-- offcanvas start  -->
+  <div class="offcanvas-3__area">
+    <div class="offcanvas-3__inner">
+      <div class="offcanvas-3__meta-wrapper">
+        <div class="">
+          <button id="close_offcanvas" class="close-button close-offcanvas" onclick="hideCanvas3()">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="">
+          <div class="offcanvas-3__meta mb-145 d-none d-md-block">
+            <ul>
+              <li><a href="tel:+2-352698102" class="unnerline"><u>+2-352 698 102</u></a></li>
+              <li><a href="mailto:contact@me.com">contact@me.com</a></li>
+              <li><a href="">27 Division St, <br>
+                  New York, NY 10002, USA</a></li>
+            </ul>
+          </div>
+          <div class="offcanvas-3__social d-none d-md-block">
+            <h4 class="title">Follow Me</h4>
+            <div class="offcanvas-3__social-links">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-dribbble"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-3__menu-wrapper">
+        <nav class="nav-menu offcanvas-3__menu">
+          <ul>
+            <li><a href="index.html">home dark</a></li>
+            <li><a href="index-light.html">home light</a></li>
+            <li><a href="about.html">about dark</a></li>
+            <li><a href="about-light.html">about light</a></li>
+            <li><a href="service.html">service dark</a></li>
+            <li><a href="service-light.html">service light</a></li>
+            <li><a href="service-details.html">service details dark</a></li>
+            <li><a href="service-details-light.html">service details light</a></li>
+            <li><a href="contact.html">contact dark</a></li>
+            <li><a href="contact-light.html">contact light</a></li>
+            <li><a href="blog.html">blog dark</a></li>
+            <li><a href="blog-light.html">blog light</a></li>
+            <li><a href="blog-details.html">blog details dark</a></li>
+            <li><a href="blog-details-light.html">blog details light</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- offcanvas end  -->
+
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="body-wrapper body-contentwriter">
+
+
+        <!-- overlay switcher close  -->
+        <div class="overlay-switcher-close"></div>
+
+        <!-- Header area start -->
+        <header class="contentwriter__header plr-100">
+          <div class="contentwriter__header-inner header__inner">
+            <div class="contentwriter__header-logo header__logo">
+              <a href="index.html">
+                <img src="assets/imgs/logo/site-logo-light.png" alt="Site-Logo" class="show-dark">
+                <img src="assets/imgs/logo/site-logo-dark.png" alt="Site-Logo" class="show-light">
+              </a>
+            </div>
+            <div class="contentwriter__header-nav header__nav-icon-6">
+              <button onclick="showCanvas3()" class="open-offcanvas">
+                <img src="assets/imgs/logo/bar-two.png" alt="bar">
+              </button>
+            </div>
+          </div>
+        </header>
+        <!-- Header area end -->
+
+
+        <main>
+
+          <!-- Hero area start  -->
+          <div class="contentwriter__hero pb-130">
+            <div class="container">
+              <div class="contentwriter__hero-content">
+                <h1 class="contentwriter__hero-title has_text_reveal_anim" data-on-scroll="0" data-duration="2">I
+                  write
+                  <br>
+                  <img src="assets/imgs/content-write/hero-sm-1.png" alt="content-write">
+                  for you <br> as you <img src="assets/imgs/content-write/hero-sm-2.png" alt="content-write"> <br>
+                  <img class="contentwriter__hero-sm3 " src="assets/imgs/content-write/hero-sm-3.png"
+                    alt="contentwrite">
+                  want
+                </h1>
+                <div class="cf_text contentwriter__hero-text has_word_anim" data-on-scroll="0" data-delay=".7">
+                  <p>Working as top rated freelance content writer and blogger with
+                    <span class="color-white">more than 10+ years</span> globally.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hero area end  -->
+
+
+          <!-- Text slider start -->
+          <section class="contentwriter__textslider-area pt-20 pb-20">
+            <div class="contentwriter__textslider">
+              <div class="swiper text__slider has_fade_anim" data-sliderSpeed="50000" data-autoPlay="true">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="text-slide-content">
+                      <h2 class="title">photographer</h2>
+                      <img src="assets/imgs/icons/star-white.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="text-slide-content">
+                      <h2 class="title">professional</h2>
+                      <img src="assets/imgs/icons/star-white.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="text-slide-content">
+                      <h2 class="title">review</h2>
+                      <img src="assets/imgs/icons/star-white.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="text-slide-content">
+                      <h2 class="title">content</h2>
+                      <img src="assets/imgs/icons/star-white.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="text-slide-content">
+                      <h2 class="title">Research</h2>
+                      <img src="assets/imgs/icons/star-white.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="text-slide-content">
+                      <h2 class="title">News</h2>
+                      <img src="assets/imgs/icons/star-white.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="text-slide-content">
+                      <h2 class="title">creative</h2>
+                      <img src="assets/imgs/icons/star-white.png" alt="image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Text slider end -->
+
+
+          <!-- Testimonial area start  -->
+          <section class="contentwriter__testimonial pb-140">
+            <div class="contentwriter__testimonial-wrapper">
+              <div class="contentwriter__testimonial-item overflow-visible">
+                <span class="contentwriter__testimonial-icon"></span>
+                <div class="contentwriter__testimonial-lef0 has_fade_anim">
+                  <img src="assets/imgs/content-write/quote.png" alt="quote" class="show-dark">
+                  <img src="assets/imgs/content-write/quote-dark.png" alt="quote" class="show-light">
+                </div>
+              </div>
+              <div class="contentwriter__testimonial-item overflow-visible">
+                <span class="contentwriter__testimonial-icon"></span>
+                <div class="contentwriter__testimonial-left2">
+                  <h2 class="contentwriter__testimonial-title has_text_reveal_anim">
+                    My clients <br> say me best <br> one</h2>
+                </div>
+              </div>
+              <div class="contentwriter__testimonial-item">
+                <span class="contentwriter__testimonial-icon"></span>
+                <div class="swiper contentwriter-active">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="contentwriter__testimonial-content has_fade_anim">
+                        <div class="cf_text contentwriter__testimonial-dis">
+                          <p>A precise and elegant arrows serif that was designed for
+                            the long-form copy with the big enough personality to make a statement for title. It is
+                            perfect
+                            to give your design that remind me 90sretro feel while being rich and contemporary.</p>
+                        </div>
+                        <span class="contentwriter__testimonial-name">Rodrigez</span>
+                        <span class="contentwriter__testimonial-post">CEO, Aliverr</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="contentwriter__testimonial-content has_fade_anim">
+                        <div class="cf_text contentwriter__testimonial-dis">
+                          <p>A precise and elegant arrows serif that was designed for
+                            the long-form copy with the big enough personality to make a statement for title. It is
+                            perfect
+                            to give your design that remind me 90sretro feel while being rich and contemporary.</p>
+                        </div>
+                        <span class="contentwriter__testimonial-name">Rodrigez</span>
+                        <span class="contentwriter__testimonial-post">CEO, Aliverr</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="contentwriter__testimonial-content has_fade_anim">
+                        <div class="cf_text contentwriter__testimonial-dis">
+                          <p>A precise and elegant arrows serif that was designed for
+                            the long-form copy with the big enough personality to make a statement for title. It is
+                            perfect
+                            to give your design that remind me 90sretro feel while being rich and contemporary.</p>
+                        </div>
+                        <span class="contentwriter__testimonial-name">Rodrigez</span>
+                        <span class="contentwriter__testimonial-post">CEO, Aliverr</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contentwriter__testimonial-item">
+                <div class="contentwriter__testimonial-navigation">
+                  <div class="contentwriter__testimonial-up has_fade_anim" data-fade-from="right">
+                    <div class="cwt-prev arrow-icon">
+                      <img src="assets/imgs/content-write/arrow-left-1.png" class="show-dark" alt="arrow-right">
+                      <img src="assets/imgs/content-write/arrow-left-dark.png" class="show-light" alt="arrow-right">
+                    </div>
+                  </div>
+
+                  <div class="contentwriter__testimonial-bottom has_fade_anim" data-fade-from="left">
+                    <div class="cwt-next arrow-icon">
+                      <img src="assets/imgs/content-write/arrow-right-1.png" class="show-dark" alt="arrow-right">
+                      <img src="assets/imgs/content-write/arrow-right-dark.png" class="show-light" alt="arrow-right">
+                    </div>
+                  </div>
+                </div>
+
+                <span class="contentwriter__testimonial-icon"></span>
+                <span class="contentwriter__testimonial-icontwo"></span>
+              </div>
+
+            </div>
+          </section>
+          <!-- Testimonial area end -->
+
+
+          <!-- Recent articles  -->
+          <section class="contentwriter__recent pb-20">
+            <div class="contentwriter__recent-titlewrap mb-55">
+              <h2 class="contentwriter__recent-stitle text_invert">My recent <br> wirings</h2>
+            </div>
+            <div class="contentwriter__recent-wrapper mb-20">
+              <article class="contentwriter__recent-item has_fade_items_anim anim_img_zoom">
+                <span class="contentwriter__testimonial-icon"></span>
+                <div class="contentwriter__recent-item-thumb cf_image">
+                  <a href="blog-details.html"><img src="assets/imgs/content-write/recent1.jpg"
+                      alt="recentarticle"></a>
+                </div>
+                <div class="contentwriter__recent-item-content">
+                  <span class="contentwriter__recent-subtitle">Client : Adrob</span>
+                  <h3 class="contentwriter__recent-title">
+                    <a href="blog-details.html">Our news picks from the first Design</a>
+                  </h3>
+                  <span class="contentwriter__recent-date">April, 14 - 2014</span>
+                </div>
+              </article>
+              <article class="contentwriter__recent-item has_fade_items_anim anim_img_zoom">
+                <span class="contentwriter__testimonial-icon"></span>
+                <div class="contentwriter__recent-item-thumb cf_image">
+                  <a href="blog-details.html"><img src="assets/imgs/content-write/recent2.jpg.png"
+                      alt="recentarticle"></a>
+                </div>
+                <div class="contentwriter__recent-item-content">
+                  <span class="contentwriter__recent-subtitle">Client : Adrob</span>
+                  <h3 class="contentwriter__recent-title">
+                    <a href="blog-details.html">Protect Your Users, Protect Yourself</a>
+                  </h3>
+                  <span class="contentwriter__recent-date">April, 14 - 2014</span>
+                </div>
+              </article>
+              <article class="contentwriter__recent-item has_fade_items_anim anim_img_zoom">
+                <span class="contentwriter__testimonial-icon"></span>
+                <div class="contentwriter__recent-item-thumb cf_image">
+                  <a href="blog-details.html"><img src="assets/imgs/content-write/recent3.jpg.png"
+                      alt="recentarticle"></a>
+                </div>
+                <div class="contentwriter__recent-item-content">
+                  <span class="contentwriter__recent-subtitle">Client : Adrob</span>
+                  <h3 class="contentwriter__recent-title">
+                    <a href="blog-details.html">The award for the best design project</a>
+                  </h3>
+                  <span class="contentwriter__recent-date">April, 14 - 2014</span>
+                </div>
+              </article>
+              <article class="contentwriter__recent-item has_fade_items_anim anim_img_zoom">
+                <span class="contentwriter__testimonial-icon"></span>
+                <div class="contentwriter__recent-item-thumb cf_image">
+                  <a href="blog-details.html"><img src="assets/imgs/content-write/recent4.jpg.png"
+                      alt="recentarticle"></a>
+                </div>
+                <div class="contentwriter__recent-item-content">
+                  <span class="contentwriter__recent-subtitle">Client : Adrob</span>
+                  <h3 class="contentwriter__recent-title">
+                    <a href="blog-details.html">The Anatomy Of Themed Design System</a>
+                  </h3>
+                  <span class="contentwriter__recent-date">April, 14 - 2014</span>
+                </div>
+              </article>
+              <article class="contentwriter__recent-item has_fade_items_anim anim_img_zoom">
+                <span class="contentwriter__testimonial-icon"></span>
+                <div class="contentwriter__recent-item-thumb cf_image">
+                  <a href="blog-details.html"><img src="assets/imgs/content-write/recent5.jpg.png"
+                      alt="recentarticle"></a>
+                </div>
+                <div class="contentwriter__recent-item-content">
+                  <span class="contentwriter__recent-subtitle">Client : Adrob</span>
+                  <h3 class="contentwriter__recent-title">
+                    <a href="blog-details.html">Protect Your Users, Protect Yourself</a>
+                  </h3>
+                  <span class="contentwriter__recent-date">April, 14 - 2014</span>
+                </div>
+              </article>
+            </div>
+            <div class="cf_btn_link">
+              <a href="blog.html" class="contentwriter__recent-browse">Browse all writings </a>
+            </div>
+          </section>
+          <!-- Recent articles  -->
+
+
+          <!-- video 7 -->
+          <section class="video__full photographer__video">
+            <video src="https://wealcoder.com/dev/video/content-writer.mp4" autoplay loop muted></video>
+            <!-- <div class="cf_image">
+            <img src="assets/imgs/thumb/bg.png" alt="Image" data-speed="auto">
+          </div> -->
+          </section>
+          <!-- /video 7 -->
+
+
+          <!-- expert  -->
+          <section class="contentwriter__expert">
+            <div class="contentwriter__expert-wrapper">
+              <div class="contentwriter__expert-item">
+                <span class="contentwriter__testimonial-icon"></span>
+                <h2 class="contentwriter__expert-title has_text_reveal_anim">My <br> expertise</h2>
+              </div>
+              <div class="contentwriter__expert-item vertically-center">
+                <div class="cf_text contentwriter__expert-text has_text_move_anim">
+                  <p>I believe that everything you can imagine is possible when you have clearly defined goals, strong
+                    design, strategy and assemble a talented team</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contentwriter__bottom">
+              <div class="contentwriter__expert-wrapper2">
+                <div class="contentwriter__expert-item expert2 has_fade_anim" data-fade-from="left">
+                  <a href="service-details.html">
+                    <div class="wcf__iconbox style-2">
+                      <div class="icon">
+                        <img src="assets/imgs/content-write/Icon1.png" class="show-dark" alt="Icon">
+                        <img src="assets/imgs/content-write/expert-1.png" class="show-light" alt="Icon">
+                      </div>
+                      <h2 class="title">product <br> review</h2>
+                      <p class="desc">Pure and contrasting nature, digital society, and smart minded
+                        people are the core values behind the brand Estonia</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="contentwriter__expert-item expert2 has_fade_anim" data-fade-from="left" data-delay="0.65">
+                  <a href="service-details.html">
+                    <div class="wcf__iconbox style-2">
+                      <div class="icon">
+                        <img src="assets/imgs/content-write/Icon2.png" class="show-dark" alt="Icon">
+                        <img src="assets/imgs/content-write/expert-2.png" class="show-light" alt="Icon">
+                      </div>
+                      <h2 class="title">SEO <br> Keyword</h2>
+                      <p class="desc">Pure and contrasting nature, digital society, and smart minded
+                        people are the core values behind the brand Estonia</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="contentwriter__expert-item expert2 has_fade_anim" data-fade-from="left" data-delay="0.8">
+                  <a href="service-details.html">
+                    <div class="wcf__iconbox style-2">
+                      <div class="icon">
+                        <img src="assets/imgs/content-write/Icon3.png" class="show-dark" alt="Icon">
+                        <img src="assets/imgs/content-write/expert-3.png" class="show-light" alt="Icon">
+                      </div>
+                      <h2 class="title">Creative <br> writing</h2>
+                      <p class="desc">Pure and contrasting nature, digital society, and smart minded
+                        people are the core values behind the brand Estonia</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="contentwriter__expert-item expert2 has_fade_anim" data-fade-from="left" data-delay=".95">
+                  <a href="service-details.html">
+                    <div class="wcf__iconbox style-2">
+                      <div class="icon">
+                        <img src="assets/imgs/content-write/Icon4.png" class="show-dark" alt="Icon">
+                        <img src="assets/imgs/content-write/expert-4.png" class="show-light" alt="Icon">
+                      </div>
+                      <h2 class="title">Blog <br> Content</h2>
+                      <p class="desc">Pure and contrasting nature, digital society, and smart minded
+                        people are the core values behind the brand Estonia</p>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </section>
+          <!-- /expert  -->
+
+
+          <!-- about  -->
+          <section class="contentwriter__about pt-120 pb-150">
+            <div class="contentwriter__about-titlewrap mb-30">
+              <h2 class="contentwriter__about-title has_text_move_anim">About me</h2>
+            </div>
+            <div class="cf_text contentwriter__about-dis mb-70 has_text_move_anim">
+              <p>I love crafting beautiful, smart and inspired work that is focused on a business and creating
+                successful
+                digital services for innovative startups goals and their customers.</p>
+            </div>
+            <div class="contentwriter__about-btn cf_btn has_fade_anim">
+              <a href="about.html" class="wc-btn-border btn-rollover-cross">explore me</a>
+            </div>
+          </section>
+          <!-- /about  -->
+
+
+          <!-- brand  -->
+          <section class="contentwriter__brand">
+            <div class="contentwriter__brand-wrapper">
+              <div class="contentwriter__brand-item">
+                <div class="contentwriter__brand-left">
+                  <span class="contentwriter__testimonial-icon"></span>
+                  <h2 class="contentwriter__brand-title has_text_reveal_anim">I worked with most <br>
+                    top companies around the <br> world</h2>
+                  <div class="contentwriter__brand-logos pt-90">
+                    <div class="cf_image has_fade_anim" data-delay="0.55">
+                      <img src="assets/imgs/content-write/br1.png" alt="brandlogo">
+                    </div>
+                    <div class="cf_image has_fade_anim" data-delay="0.6">
+                      <img src="assets/imgs/content-write/br2.png" alt="brandlogo">
+                    </div>
+                    <div class="cf_image has_fade_anim" data-delay="0.65">
+                      <img src="assets/imgs/content-write/br3.png" alt="brandlogo">
+                    </div>
+                    <div class="cf_image has_fade_anim" data-delay="0.7">
+                      <img src="assets/imgs/content-write/br4.png" alt="brandlogo">
+                    </div>
+                    <div class="cf_image has_fade_anim" data-delay="0.75">
+                      <img src="assets/imgs/content-write/br5.png" alt="brandlogo">
+                    </div>
+                    <div class="cf_image has_fade_anim" data-delay="0.8">
+                      <img src="assets/imgs/content-write/br6.png" alt="brandlogo">
+                    </div>
+                    <div class="cf_image has_fade_anim" data-delay="0.85">
+                      <img src="assets/imgs/content-write/br7.png" alt="brandlogo">
+                    </div>
+                    <div class="cf_image has_fade_anim" data-delay="0.9">
+                      <img src="assets/imgs/content-write/br8.png" alt="brandlogo">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contentwriter__brand-item">
+                <div class="contentwriter__brand-right cf_image img_anim_reveal">
+                  <img src="assets/imgs/content-write/br8.jpg.png" alt="brand8" data-speed="0.8">
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- /brand  -->
+
+
+          <!-- Newsletter area start  -->
+          <section class="contentwriter__newsletter pt-140 pb-140">
+            <div class="contentwriter__newsletter-inner">
+              <span class="contentwriter__newsletter-subtitle mb-30 has_text_reveal_anim">Newsletter </span>
+              <div class="contentwriter__newsletter-titlewrapper mb-60">
+                <h2 class="contentwriter__newsletter-title has_text_reveal_anim">Stay up to date with <br> Joya
+                  newsletter
+                </h2>
+              </div>
+              <div class="contentwriter__newsletter-wrapper mb-30 has_fade_anim">
+                <form action="#">
+                  <input type="email" name="email" placeholder="Enter your email" id="email">
+                  <button type="submit" class="contentwriter__newsletter-kitebtn">subscribe <i
+                      class="fa-regular fa-paper-plane"></i></button>
+                </form>
+              </div>
+              <div class="cf_text contentwriter__newsletter-note has_fade_anim">
+                <p>*Note : your information are safe</p>
+              </div>
+            </div>
+          </section>
+          <!-- Newsletter area end  -->
+
+
+        </main>
+
+        <!-- footer  -->
+        <footer class="contentwriter__footer">
+          <div class="contentwriter__footer-wrapper">
+            <div class="contentwriter__footer-item">
+              <div class="contentwriter__footer-left">
+                <span>© 2022 - 2025 | by <a href="https://www.crowdyflow.com/" target="">CrowdyFlow</a></span>
+              </div>
+            </div>
+            <div class="contentwriter__footer-item">
+              <div class="contentwriter__footer-center">
+                <ul class="contentwriter__footer-social">
+                  <li><a href="#">fb</a></li>
+                  <li><a href="#">tw</a></li>
+                  <li><a href="#">in</a></li>
+                  <li><a href="#">db</a></li>
+                  <li><a href="#">be</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="contentwriter__footer-item">
+              <div class="contentwriter__footer-right">
+                <ul class="contentwriter__footer-menu">
+                  <li><a href="about.html">about</a></li>
+                  <li><a href="service.html">services</a></li>
+                  <li><a href="blog.html">blog</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- /footer  -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- All JS files -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/typed.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/progressbar.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/TweenMax.min.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/tilt.jquery.min.js"></script>
+  <script src="assets/js/beforeafter.jquery-1.0.0.min.js"></script>
+  <script src="assets/js/basictable.min.js"></script>
+  <script src="assets/js/backToTop.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/error-handling.js"></script>
+  <script src="assets/js/offcanvas.js"></script>
+  <script src="assets/js/wc-cursor.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+
+.dir-rtl .swiper-slide {
+  direction: rtl;
+}
+
+
+/* Test Purpose */
+.offcanvas-area {
+  opacity: 0;
+  visibility: hidden;
+}
+.rounded-image {
+  border-radius: 10px; /* You can adjust the value to change the roundness */
+}
+.contentwriter__hero .contentwriter__hero-title {
+  opacity: 1;
+}
+@font-face {
+  font-family: 'Owners';
+  src: url('assets/owners-xwide-bold.ttf') format('truetype');
+}
+.contentwriter__hero .contentwriter__hero-title,
+.footer__dancer .footer__title-10, 
+.footer__dancer .footer__email-10,
+.footer__dancer .footer__copytext,
+.footer__dancer .day-time,
+.contentwriter__textslider .text-slide-content h2 {
+  font-family: 'Owners', sans-serif;  
+}
+
+
+
+.footer__dancer .footer__title-10{
+  font-size: 90px;
+}
+
+@font-face {
+  font-family: 'Extrude-90aK';
+  src: url('assets/Ransom-L36n.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.contentwriter__hero-title {
+  font-family: 'Extrude-90aK', sans-serif; /* Apply the custom font to the entire element */
+}
+
+/* You can use a class for styling only the "build" word if needed */
+.build-word {
+  font-family: 'Extrude-90aK', sans-serif;
+}
